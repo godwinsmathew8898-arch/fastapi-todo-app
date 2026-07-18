@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <div class="container">
+        
+        <div id="loginSection">
+            <h2>Hai👋, Welcome to TODO</h2>
+            <div class="input-box">
+                <input type="text" id="usernameInput" placeholder="Enter your name...">
+                <button onclick="loginUser()">Login</button>
+            </div>
+        </div> 
+
+        <div id="todoSection" style="display: none;">
+            <h2 id="userGreeting">📝 My Todo List</h2>
+            <button onclick="logoutUser()">Logout</button>
+            
+            <ul id="list"></ul>
+            
+            <div class="input-box">
+                <input type="text" id="taskInput" placeholder="Add a new task...">
+                <button onclick="addTask()">Add</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="static/script.js"></script>
+</body>
+</html>
